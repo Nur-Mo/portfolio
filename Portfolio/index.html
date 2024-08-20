@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+  <html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/b1453024da.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="./images/logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Service</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header_text">
+                <p>Python Developer</p>
+                <h1>Hi, I'm <span>Nur Mohamed</span><br />PYTHON DEVELOPER</h1>
+            </div>
+        </div>
+    </div>
+
+    <!------------------------------------------ About ----------------------------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="./images/Nur.png">
+                </div>
+                <div class="about-col-2">
+                    <h2 class="sub-title">About myself</h2>
+                    <p>Full-Stack Python Developer with a proven track record in designing and developing dynamic,
+                        JavaScript-based applications for both web and mobile environments.
+                        Demonstrates strong expertise in full-stack Python development, particularly with Django and Flask frameworks,
+                        and proficient in building robust REST APIs. Adept at creating responsive and interactive front-end interfaces using JavaScript, HTML, and CSS.
+                        Skilled in database management with MySQL and MongoDB, ensuring efficient data storage and retrieval.
+                        Passionate about delivering high-quality,
+                        scalable solutions that enhance user experience and drive business success.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-links" onClick="openTab('skills')">Skills</p>
+                        <p class="tab-links" onClick="openTab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Python Programming</span><br>Automation, Data Analysis, Web Scraping<br></li>
+                            <li><span>Web development</span><br>Educational Platforms, Booking Systems, E-commerce</li>
+                            <li><span>Databases</span><br>Designing, Optimization, NoSQL</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2021</span>BCA from Open University, Milton Keynes.<br></li>
+                            <li><span>2017</span>Metropolitan College, Birmingham.</li>
+                            <li><span>2000</span>BSc from Mount Kenya University.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!------------------------------ Services ------------------------------>
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fas fa-code"></i>
+                    <h1>Python Developer</h1>
+                    <p>As a dedicated and innovative Full-Stack Python Developer, I excel in creating dynamic and visually compelling websites and applications.
+                        With extensive expertise in both front-end and back-end technologies, I transform ideas into functional and seamless digital experiences. My proficiency in Python, Django, Flask, JavaScript, HTML, CSS.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fas fa-database"></i> <i class="fas fa-leaf"></i> <i class="fas fa-cogs"></i> <i class="fab fa-docker"></i>
+                    <h1>MySQL, MongoDB, DevOps, and Docker</h1>
+                    <p>My expertise in database management with MySQL and MongoDB, combined with DevOps skills and experience in Git, GitHub,
+                        and Docker, underpins the creation of robust, user-centric solutions. With a commitment to quality and efficiency,
+                        I deliver scalable projects that consistently surpass client expectations.</p>
+                    <a href="#">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!------------- Portfolio ------------------>
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="./images/Airbnb.png">
+                    <div class="layer">
+                        <h3>Airbnb Clone</h3>
+                        <p>It helps you find the hotels nearby your destination</p>
+                        <a href="https://github.com/Nur-Mo?tab=repositories"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+
+    <!------------------------- Contact Details ------------------------->
+    <div id="contact">
+        <div class="container">
+            <h1 class="sub-title">Contact Me</h1>
+            <div class="row">
+                <div class="contact-left">
+                    <p><i class="fa-solid fa-paper-plane"></i> nur.python23@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i> +44 7724024188</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/nurani.mohamed"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/nur-mo-08683b14a/"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="./images/Nur-resume.pdf" download="" class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright &copy; Nur. Made in 2023 with <i class="fa-solid fa-heart"></i></p>
+        </div>
+    </div>
+
+    <script>
+        var tablinks = document.getElementsByClassName('tab-links');
+        var tabcontents = document.getElementsByClassName('tab-contents');
+
+        function openTab(tabname) {
+            for (var tablink of tablinks) {
+                tablink.classList.remove('active-links');
+            }
+            for (var tabcontent of tabcontents) {
+                tabcontent.classList.remove('active-tab');
+            }
+            event.currentTarget.classList.add('active-links');
+            document.getElementById(tabname).classList.add('active-tab');
+        }
+    </script>
+    <script>
+        var sidemnu = document.getElementById('sidemenu');
+
+        function openmenu() {
+            console.log('opening menu');
+            sidemnu.style.right = '0';
+        }
+
+        function closemenu() {
+            sidemnu.style.right = '-200px';
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbw9siqMz7q_COU3vFZ_zeS9U8BHCdDss9hIzwlPdaOuqPpSjD2tahKx3APXpux-yGdlXQ/exec';
+
+        const form = document.forms['submit-to-google-sheet'];
+        const message = document.getElementById('msg');
+
+        form.addEventListener('submit', e => {
+            e.preventDefault();
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    message.innerHTML = 'Message sent successfully';
+                    setTimeout(function () {
+                        message.innerHTML = '';
+                    }, 5000);
+                    form.reset();
+                })
+                .catch(error => console.error('Error!', error.message));
+        });
+    </script>
+
+</body>
+
+</html>
